@@ -1,0 +1,311 @@
+/*
+      www.OnlineWebFonts.Com 
+      You must credit the author Copy this link on your web 
+      <div>Font made from <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a>is licensed by CC BY 3.0</div>
+      OR
+      <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a>
+*/
+@font-face {
+  font-family: "ComoW01-SemiBold";
+  src: url("http://db.onlinewebfonts.com/t/a08775abc6c2f3acb84471442c4ae603.eot");
+  /* IE9*/
+  src: url("http://db.onlinewebfonts.com/t/a08775abc6c2f3acb84471442c4ae603.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */ url("http://db.onlinewebfonts.com/t/a08775abc6c2f3acb84471442c4ae603.woff2") format("woff2"), /* chrome firefox */ url("http://db.onlinewebfonts.com/t/a08775abc6c2f3acb84471442c4ae603.woff") format("woff"), /* chrome firefox */ url("http://db.onlinewebfonts.com/t/a08775abc6c2f3acb84471442c4ae603.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/ url("http://db.onlinewebfonts.com/t/a08775abc6c2f3acb84471442c4ae603.svg#ComoW01-SemiBold") format("svg");
+  /* iOS 4.1- */
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* box sizing border box */
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+:root {
+  font-size: 62.5%;
+  font-family: "ComoW01-SemiBold";
+}
+.content {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+nav {
+  margin: 2.2rem 0 4.8rem;
+}
+nav a {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: black;
+}
+.upper-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 3.5rem;
+}
+.left-nav {
+  display: flex;
+  align-items: flex-start;
+}
+.left-nav .logo {
+  font-size: 2.8rem;
+  margin: 0 0.5rem 0 4rem;
+}
+.left-nav input {
+  width: 36.2rem;
+  height: 3.2rem;
+  border: 0.1rem solid black;
+  border-radius: 0.3rem;
+}
+.left-nav a {
+  margin: 0 1.6rem 0;
+}
+.left-nav a:first-of-type {
+  margin-left: 1rem;
+}
+.right-nav {
+  display: flex;
+  align-items: flex-start;
+}
+.right-nav a {
+  margin: 0 1.4rem 0;
+  font-size: 1.6rem;
+}
+.lower-nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+.jumbo {
+  position: relative;
+  margin-bottom: 5.8rem;
+}
+.jumbo img {
+  width: 100%;
+  max-height: 59rem;
+  object-fit: cover;
+}
+.jumbo .cta {
+  position: absolute;
+  left: 3.5rem;
+  bottom: 5.7rem;
+}
+.jumbo .cta p {
+  font-size: 3rem;
+  line-height: 6rem;
+  margin-bottom: 7.3rem;
+}
+.jumbo .cta a {
+  font-size: 2.3rem;
+  text-decoration: none;
+  color: black;
+  background: #4DEDFF;
+  padding: 0.3rem 7.5rem;
+  border-radius: 0.3rem;
+}
+.photos-container {
+  margin: 0 3.5rem 0;
+}
+.photos-container h2 {
+  font-size: 2.7rem;
+  margin-bottom: 1.1rem;
+  font-weight: bold;
+}
+.photos-container h3 {
+  font-size: 2.3rem;
+  margin-bottom: 5rem;
+}
+.top-photographs {
+  display: flex;
+  margin-bottom: 4.2rem;
+}
+.collection {
+  width: 100%;
+  margin-right: 1rem;
+}
+.collection:last-of-type {
+  margin-right: 0;
+}
+.user-signature {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.user-signature img {
+  width: 2.3rem;
+  height: 2.3rem;
+  object-fit: cover;
+  border-radius: 100%;
+}
+.user-signature span {
+  margin-left: 0.8rem;
+  font-size: 1.2rem;
+}
+.top-photo-div {
+  position: relative;
+  width: 100%;
+  margin-bottom: 0.7rem;
+}
+.top-photo-div img {
+  width: 100%;
+  height: 22.4rem;
+  object-fit: cover;
+}
+.img-cover {
+  position: absolute;
+  display: none;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.img-cover.visible {
+  display: block;
+}
+.img-cover .like-button {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 0.5rem;
+}
+.img-cover .comment-button {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+}
+.recent-popular-buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+.recent-popular-buttons a {
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: black;
+  margin-left: 2.5rem;
+}
