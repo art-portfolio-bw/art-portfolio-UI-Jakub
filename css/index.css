@@ -1,17 +1,3 @@
-/*
-      www.OnlineWebFonts.Com 
-      You must credit the author Copy this link on your web 
-      <div>Font made from <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a>is licensed by CC BY 3.0</div>
-      OR
-      <a href="http://www.onlinewebfonts.com">oNline Web Fonts</a>
-*/
-@font-face {
-  font-family: "ComoW01-SemiBold";
-  src: url("http://db.onlinewebfonts.com/t/a08775abc6c2f3acb84471442c4ae603.eot");
-  /* IE9*/
-  src: url("http://db.onlinewebfonts.com/t/a08775abc6c2f3acb84471442c4ae603.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */ url("http://db.onlinewebfonts.com/t/a08775abc6c2f3acb84471442c4ae603.woff2") format("woff2"), /* chrome firefox */ url("http://db.onlinewebfonts.com/t/a08775abc6c2f3acb84471442c4ae603.woff") format("woff"), /* chrome firefox */ url("http://db.onlinewebfonts.com/t/a08775abc6c2f3acb84471442c4ae603.ttf") format("truetype"), /* chrome firefox opera Safari, Android, iOS 4.2+*/ url("http://db.onlinewebfonts.com/t/a08775abc6c2f3acb84471442c4ae603.svg#ComoW01-SemiBold") format("svg");
-  /* iOS 4.1- */
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -151,7 +137,8 @@ html {
 }
 :root {
   font-size: 62.5%;
-  font-family: "ComoW01-SemiBold";
+  font-family: "Kodchasan";
+  color: #313237;
 }
 .content {
   max-width: 1024px;
@@ -177,16 +164,16 @@ nav a {
 }
 .left-nav .logo {
   font-size: 2.8rem;
-  margin: 0 0.5rem 0 4rem;
+  margin: 0 0.1rem 0 4rem;
 }
 .left-nav input {
   width: 36.2rem;
   height: 3.2rem;
-  border: 0.1rem solid black;
+  border: 0.1rem solid #313237;
   border-radius: 0.3rem;
 }
 .left-nav a {
-  margin: 0 1.6rem 0;
+  margin: 0 1rem 0;
 }
 .left-nav a:first-of-type {
   margin-left: 1rem;
@@ -196,7 +183,7 @@ nav a {
   align-items: flex-start;
 }
 .right-nav a {
-  margin: 0 1.4rem 0;
+  margin: 0 1.2rem 0;
   font-size: 1.6rem;
 }
 .lower-nav {
@@ -218,9 +205,10 @@ nav a {
   bottom: 5.7rem;
 }
 .jumbo .cta p {
+  font-family: "Anton";
   font-size: 3rem;
-  line-height: 6rem;
-  margin-bottom: 7.3rem;
+  line-height: 6.6rem;
+  margin-bottom: 6.7rem;
 }
 .jumbo .cta a {
   font-size: 2.3rem;
