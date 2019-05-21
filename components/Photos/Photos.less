@@ -105,31 +105,42 @@
   .like-button {
     position: absolute;
     background: white;
+    color: @black;
     border: none;
     border-radius: @border-radius;
     width: 6rem;
     height: 2.5rem;
-    bottom: 0.5rem;
-    right: 0.5rem;
+    bottom: 1rem;
+    right: 1rem;
     font-family: "Kodchasan";
 
+    &:focus {
+      outline: 0;
+    }
+
     &.liked {
-      color: red;
+      color: @red;
     }
 
     i {
-      color: red;
+      color: @red;
     }
   }
 
   .comment-button {
     position: absolute;
+    color: @grey;
     background: white;
     border: none;
     border-radius: @border-radius;
-    top: 0.5rem;
-    right: 0.5rem;
+    padding: 0.3rem;
+    top: 1rem;
+    right: 1rem;
     font-family: "Kodchasan";
+
+    &:focus {
+      outline: 0;
+    }
   }
 }
 // Recent and popular

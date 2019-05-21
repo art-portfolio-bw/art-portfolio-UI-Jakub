@@ -229,6 +229,9 @@ home page is marketing page
   border: none;
   cursor: pointer;
 }
+.hamburger .hamburger-btn:focus {
+  outline: 0;
+}
 .mobile-nav {
   display: flex;
   position: fixed;
@@ -415,28 +418,37 @@ home page is marketing page
 .img-cover .like-button {
   position: absolute;
   background: white;
+  color: #313237;
   border: none;
   border-radius: 0.3rem;
   width: 6rem;
   height: 2.5rem;
-  bottom: 0.5rem;
-  right: 0.5rem;
+  bottom: 1rem;
+  right: 1rem;
   font-family: "Kodchasan";
 }
+.img-cover .like-button:focus {
+  outline: 0;
+}
 .img-cover .like-button.liked {
-  color: red;
+  color: #e93c3c;
 }
 .img-cover .like-button i {
-  color: red;
+  color: #e93c3c;
 }
 .img-cover .comment-button {
   position: absolute;
+  color: #AEB0B7;
   background: white;
   border: none;
   border-radius: 0.3rem;
-  top: 0.5rem;
-  right: 0.5rem;
+  padding: 0.3rem;
+  top: 1rem;
+  right: 1rem;
   font-family: "Kodchasan";
+}
+.img-cover .comment-button:focus {
+  outline: 0;
 }
 .recent-popular-buttons {
   display: flex;

@@ -99,12 +99,12 @@ class LikeButton {
     } else {
       this.likes--;
     }
-    const heart = this.element.querySelector('.fa-heart');
-    heart.classList.toggle('far');
-    heart.classList.toggle('fas');
+    const heart = this.element.querySelector(".fa-heart");
+    heart.classList.toggle("far");
+    heart.classList.toggle("fas");
 
     let textNode = this.element.childNodes[1];
-  
+
     this.element.classList.toggle("liked");
     this.liked = !this.liked;
     textNode.nodeValue = ` ${this.likes}`;
@@ -121,8 +121,11 @@ class LikeButton {
 class CommentButton {
   constructor() {
     this.element = document.createElement("button");
-
-    this.element.textContent = "Comment";
+    const speechBubble = document.createElement("i");
+    speechBubble.classList.add("fas");
+    speechBubble.classList.add("fa-comment-dots");
+    speechBubble.classList.add("fa-2x");
+    this.element.append(speechBubble);
     this.element.classList.add("comment-button");
   }
 }
