@@ -86,7 +86,9 @@ class LikeButton {
     this.likes = likes;
     this.liked = false;
 
-    this.element.textContent = this.likes;
+    this.element.append(this.createHeart());
+    const likesNode = document.createTextNode(` ${this.likes}`);
+    this.element.append(likesNode);
 
     this.element.addEventListener("click", () => this.addLike());
   }
@@ -97,14 +99,29 @@ class LikeButton {
     } else {
       this.likes--;
     }
+    const heart = this.element.querySelector('.fa-heart');
+    heart.classList.toggle('far');
+    heart.classList.toggle('fas');
+
+    let textNode = this.element.childNodes[1];
+  
+    this.element.classList.toggle("liked");
     this.liked = !this.liked;
-    this.element.textContent = this.likes;
+    textNode.nodeValue = ` ${this.likes}`;
+  }
+
+  createHeart() {
+    const heart = document.createElement("i");
+    heart.classList.add("far");
+    heart.classList.add("fa-heart");
+    return heart;
   }
 }
 
 class CommentButton {
   constructor() {
     this.element = document.createElement("button");
+
     this.element.textContent = "Comment";
     this.element.classList.add("comment-button");
   }

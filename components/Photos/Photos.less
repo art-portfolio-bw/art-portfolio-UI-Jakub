@@ -36,10 +36,6 @@
 .collection {
   width: 100%;
 
-  @media @mobile-view {
-    margin: 0;
-  }
-
   &:last-of-type {
     margin-right: 0;
   }
@@ -53,7 +49,6 @@
       margin-right: @photos-margin-mobile;
     }
   }
-
 }
 
 .user-signature {
@@ -94,6 +89,7 @@
   }
 }
 
+// Cover
 .img-cover {
   position: absolute;
   display: none;
@@ -108,14 +104,32 @@
 
   .like-button {
     position: absolute;
+    background: white;
+    border: none;
+    border-radius: @border-radius;
+    width: 6rem;
+    height: 2.5rem;
     bottom: 0.5rem;
     right: 0.5rem;
+    font-family: "Kodchasan";
+
+    &.liked {
+      color: red;
+    }
+
+    i {
+      color: red;
+    }
   }
 
   .comment-button {
     position: absolute;
+    background: white;
+    border: none;
+    border-radius: @border-radius;
     top: 0.5rem;
     right: 0.5rem;
+    font-family: "Kodchasan";
   }
 }
 // Recent and popular
