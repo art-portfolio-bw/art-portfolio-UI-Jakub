@@ -15,6 +15,7 @@
 
     p {
       font-family: "Anton";
+      text-shadow: 0px 0px 8px rgba(255,255,255,1);
       font-size: 3rem;
       line-height: 6.6rem;
       margin-bottom: 6.7rem;
@@ -23,10 +24,15 @@
     a {
       font-size: 2.3rem;
       text-decoration: none;
-      color: black;
-      background: @blue;
+      color: @black;
+      background-color: @blue;
       padding: 0.3rem 7.5rem;
       border-radius: @border-radius;
+      transition: background-color 0.2s;
+
+      &:hover {
+        background-color: @blue-secondary;
+      }
     }
   }
 }

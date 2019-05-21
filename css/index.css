@@ -135,42 +135,54 @@ html {
 *:after {
   box-sizing: inherit;
 }
+@font-face {
+  font-family: 'Anton';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Anton Regular'), local('Anton-Regular'), url(https://fonts.gstatic.com/s/anton/v10/1Ptgg87LROyAm3Kz-Co.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Kodchasan';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Kodchasan Regular'), local('Kodchasan-Regular'), url(https://fonts.gstatic.com/s/kodchasan/v2/1cXxaUPOAJv9sG4I-DJWiHGA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Kodchasan';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Kodchasan Bold'), local('Kodchasan-Bold'), url(https://fonts.gstatic.com/s/kodchasan/v2/1cX0aUPOAJv9sG4I-DJeM1SQhuCs.ttf) format('truetype');
+}
 :root {
   font-size: 62.5%;
   font-family: "Kodchasan";
   color: #313237;
 }
 .content {
-  max-width: 1024px;
   margin: 0 auto;
 }
+/*
+delete bottom navbar and search bar, home page instead of photo collections,
+home page is marketing page
+*/
 nav {
-  margin: 2.2rem 0 4.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2.2rem 0 3.5rem;
 }
 nav a {
   font-size: 1.5rem;
   text-decoration: none;
-  color: black;
-}
-.upper-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 3.5rem;
+  color: #313237;
 }
 .left-nav {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 }
 .left-nav .logo {
-  font-size: 2.8rem;
-  margin: 0 0.1rem 0 4rem;
-}
-.left-nav input {
-  width: 36.2rem;
-  height: 3.2rem;
-  border: 0.1rem solid #313237;
-  border-radius: 0.3rem;
+  width: 14rem;
+  margin: 0 0.1rem 0 2.3rem;
 }
 .left-nav a {
   margin: 0 1rem 0;
@@ -180,15 +192,11 @@ nav a {
 }
 .right-nav {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 }
 .right-nav a {
   margin: 0 1.2rem 0;
   font-size: 1.6rem;
-}
-.lower-nav {
-  display: flex;
-  justify-content: space-evenly;
 }
 .jumbo {
   position: relative;
@@ -206,6 +214,7 @@ nav a {
 }
 .jumbo .cta p {
   font-family: "Anton";
+  text-shadow: 0px 0px 8px #ffffff;
   font-size: 3rem;
   line-height: 6.6rem;
   margin-bottom: 6.7rem;
@@ -213,10 +222,14 @@ nav a {
 .jumbo .cta a {
   font-size: 2.3rem;
   text-decoration: none;
-  color: black;
-  background: #4DEDFF;
+  color: #313237;
+  background-color: #4DEDFF;
   padding: 0.3rem 7.5rem;
   border-radius: 0.3rem;
+  transition: background-color 0.2s;
+}
+.jumbo .cta a:hover {
+  background-color: #A3F6FF;
 }
 .photos-container {
   margin: 0 3.5rem 0;
@@ -263,7 +276,7 @@ nav a {
 }
 .top-photo-div img {
   width: 100%;
-  height: 22.4rem;
+  height: 40rem;
   object-fit: cover;
 }
 .img-cover {

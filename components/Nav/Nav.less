@@ -1,35 +1,23 @@
 nav {
-  margin: 2.2rem 0 4.8rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2.2rem 0 3.5rem;
 
   a {
     font-size: 1.5rem;
     text-decoration: none;
-    color: black;
+    color: @black;
   }
-}
-
-// Top
-.upper-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  margin-bottom: 3.5rem;
 }
 
 .left-nav {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 
   .logo {
-    font-size: 2.8rem;
-    margin: 0 0.1rem 0 4rem;
-  }
-
-  input {
-    width: 36.2rem;
-    height: 3.2rem;
-    border: 0.1rem solid @black;
-    border-radius: @border-radius;
+    width: 14rem;
+    margin: 0 0.1rem 0 2.3rem;
   }
 
   a {
@@ -43,16 +31,10 @@ nav {
 
 .right-nav {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
 
   a {
     margin: 0 1.2rem 0;
     font-size: 1.6rem;
   }
-}
-
-// Bottom
-.lower-nav {
-  display: flex;
-  justify-content: space-evenly;
 }
