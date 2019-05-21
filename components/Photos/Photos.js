@@ -171,6 +171,8 @@ const topPhotoData = [
   }
 ];
 
-topPhotoData.forEach(data =>
-  document.querySelector(".top-photographs").append(new TopPhoto(data).element)
+const photos = topPhotoData.map(data =>
+  document.querySelector(".top-photographs").appendChild(new TopPhoto(data).element)
 );
+
+console.log(photos);
