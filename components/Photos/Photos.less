@@ -2,6 +2,10 @@
 .photos-container {
   margin: 0 3.5rem 0;
 
+  @media @mobile-view {
+    margin: 0 2rem 0;
+  }
+
   h2 {
     font-size: 2.7rem;
     margin-bottom: 1.1rem;
@@ -17,11 +21,19 @@
 .top-photographs {
   display: flex;
   margin-bottom: 4.2rem;
+
+  @media @mobile-view {
+    flex-direction: column;
+  }
 }
 
 .collection {
   width: 100%;
   margin-right: 1rem;
+
+  @media @mobile-view {
+    margin: 0;
+  }
 
   &:last-of-type {
     margin-right: 0;

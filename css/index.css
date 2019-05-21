@@ -277,12 +277,29 @@ home page is marketing page
   left: 15%;
   bottom: 10%;
 }
+@media screen and (max-width: 600px) {
+  .jumbo .cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    left: 3rem;
+    right: 3rem;
+  }
+}
 .jumbo .cta p {
   font-family: "Anton";
   text-shadow: 0px 0px 8px #ffffff;
   font-size: 3rem;
   line-height: 6.6rem;
   margin-bottom: 6.7rem;
+}
+@media screen and (max-width: 600px) {
+  .jumbo .cta p {
+    font-size: 2.5rem;
+    line-height: 4rem;
+    margin-bottom: 4rem;
+  }
 }
 .jumbo .cta a {
   font-size: 2.3rem;
@@ -293,11 +310,21 @@ home page is marketing page
   border-radius: 0.3rem;
   transition: background-color 0.2s;
 }
+@media screen and (max-width: 600px) {
+  .jumbo .cta a {
+    padding: 0.3rem 4rem;
+  }
+}
 .jumbo .cta a:hover {
   background-color: #A3F6FF;
 }
 .photos-container {
   margin: 0 3.5rem 0;
+}
+@media screen and (max-width: 600px) {
+  .photos-container {
+    margin: 0 2rem 0;
+  }
 }
 .photos-container h2 {
   font-size: 2.7rem;
@@ -312,9 +339,19 @@ home page is marketing page
   display: flex;
   margin-bottom: 4.2rem;
 }
+@media screen and (max-width: 600px) {
+  .top-photographs {
+    flex-direction: column;
+  }
+}
 .collection {
   width: 100%;
   margin-right: 1rem;
+}
+@media screen and (max-width: 600px) {
+  .collection {
+    margin: 0;
+  }
 }
 .collection:last-of-type {
   margin-right: 0;
