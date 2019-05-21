@@ -10,30 +10,49 @@
 	<title>Story by HTML5 UP</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+	integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="assets/css/main.css" />
-	<style>
-	</style>
 	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+	<script defer src="components/Nav/Nav.js"></script>
 </head>
 
 <body class="is-preload">
 
 	<!-- Wrapper -->
 	<div id="wrapper" class="divided content">
-			<nav>
+			<nav class="main-nav">
 					<div class="left-nav">
 						<a href="index.html"><img src="img/LOGO.png" class="logo" alt="logo"></img></a>
-						<a href="index.html">Home</a>
-						<a href="artists.html">Artists</a>
-						<a href="about.html">About</a>
+						<div class="left-links">
+							<a href="index.html">Home</a>
+							<a href="artists.html">Artists</a>
+							<a href="about.html">About</a>
+						</div>
 					</div>
 					<div class="right-nav">
 						<a href="#">Login</a>
 						<a href="#">Sign Up</a>
 					</div>
-			</nav>
+					<div class="hamburger">
+						<button class="hamburger-btn">
+							<i class="fas fa-bars fa-3x"></i>
+						</button>
+					</div>
+				</nav>
+				<nav class="mobile-nav">
+					<a href="index.html">Home</a>
+					<a href="artists.html">Artists</a>
+					<a href="about.html">About</a>
+					<div class="mobile-nav-login-signup">
+						<a href="#">Login</a>
+						<a href="#">Sign Up</a>
+					</div>
+				</nav>
+				<div class="nav-separation"></div>
 
 		<!-- One -->
 		<section
@@ -43,7 +62,7 @@
 				<p class="major">A (modular, highly tweakable) responsive one-page template designed by <a
 						href="https://html5up.net">HTML5 UP</a> and released for free under the <a
 						href="https://html5up.net/license">Creative Commons</a>.</p>
-					<a href="#first" class="button-cta">Get Started</a>
+				<a href="#first" class="button-cta">Get Started</a>
 			</div>
 			<div class="image">
 				<img src="img/placeholder4.jpg" alt="" />

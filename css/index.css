@@ -165,20 +165,31 @@ html {
 delete bottom navbar and search bar, home page instead of photo collections,
 home page is marketing page
 */
-nav {
+.main-nav {
+  position: fixed;
   display: flex;
   justify-content: space-between;
+  background-color: white;
+  width: 100%;
   align-items: center;
-  margin: 2.2rem 0 3.5rem;
+  height: 6rem;
 }
-nav a {
+.main-nav a {
   font-size: 1.5rem;
   text-decoration: none;
   color: #313237;
 }
+.nav-separation {
+  height: 6rem;
+}
 .left-nav {
   display: flex;
   align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .left-nav .left-links {
+    display: none;
+  }
 }
 .left-nav .logo {
   width: 14rem;
@@ -194,9 +205,62 @@ nav a {
   display: flex;
   align-items: center;
 }
+@media screen and (max-width: 600px) {
+  .right-nav {
+    display: none;
+  }
+}
 .right-nav a {
   margin: 0 1.2rem 0;
   font-size: 1.6rem;
+}
+.hamburger {
+  margin-right: 2rem;
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .hamburger {
+    display: block;
+  }
+}
+.hamburger .hamburger-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.mobile-nav {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  background-color: white;
+  text-align: center;
+  top: 6rem;
+  right: -20rem;
+  bottom: 0;
+  transition: right 0.2s;
+  z-index: 1;
+}
+.mobile-nav.visible {
+  right: 0rem;
+}
+@media screen and (min-width: 600px) {
+  .mobile-nav.visible {
+    display: none;
+  }
+}
+.mobile-nav a {
+  color: #313237;
+  text-decoration: none;
+  font-size: 2.5rem;
+  padding: 2rem;
+  width: 20rem;
+}
+.mobile-nav-login-signup {
+  display: flex;
+  flex-direction: column;
+}
+.mobile-nav-login-signup a {
+  font-size: 3rem;
 }
 .jumbo {
   position: relative;

@@ -5,24 +5,44 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Fotograph</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
   <link rel="stylesheet" href="css/index.css">
+  <script defer src="components/Nav/Nav.js"></script>
   <script defer src="components/Photos/Photos.js"></script>
 </head>
 
 <body>
   <div class="content">
-    <nav>
-        <div class="left-nav">
-          <a href="index.html"><img src="img/LOGO.png" class="logo" alt="logo"></img></a>
+      <nav class="main-nav">
+          <div class="left-nav">
+            <a href="index.html"><img src="img/LOGO.png" class="logo" alt="logo"></img></a>
+            <div class="left-links">
+              <a href="index.html">Home</a>
+              <a href="artists.html">Artists</a>
+              <a href="about.html">About</a>
+            </div>
+          </div>
+          <div class="right-nav">
+            <a href="#">Login</a>
+            <a href="#">Sign Up</a>
+          </div>
+          <div class="hamburger">
+            <button class="hamburger-btn">
+              <i class="fas fa-bars fa-3x"></i>
+            </button>
+          </div>
+        </nav>
+        <nav class="mobile-nav">
           <a href="index.html">Home</a>
           <a href="artists.html">Artists</a>
           <a href="about.html">About</a>
-        </div>
-        <div class="right-nav">
-          <a href="#">Login</a>
-          <a href="#">Sign Up</a>
-        </div>
-    </nav>
+          <div class="mobile-nav-login-signup">
+            <a href="#">Login</a>
+            <a href="#">Sign Up</a>
+          </div>
+        </nav>
+        <div class="nav-separation"></div>
     <section class="jumbo">
       <img src="img/placeholder4.jpg" alt="Art">
       <div class="cta">
