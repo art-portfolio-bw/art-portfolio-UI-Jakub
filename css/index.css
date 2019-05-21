@@ -173,6 +173,7 @@ home page is marketing page
   width: 100%;
   align-items: center;
   height: 6rem;
+  z-index: 1;
 }
 .main-nav a {
   font-size: 1.5rem;
