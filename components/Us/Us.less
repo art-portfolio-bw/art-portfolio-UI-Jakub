@@ -1,0 +1,52 @@
+.us {
+  margin: 2rem;
+
+  h1 {
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 10rem;
+  }
+}
+
+.us-info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.us-person {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 2rem;
+
+  h2 {
+    font-size: 2.8rem;
+  }
+
+  img {
+    margin: 2rem;
+    width: 30rem;
+    height: 30rem;
+    border-radius: 100%;
+    object-fit: cover;
+    border: 0.2rem solid @black;
+  }
+
+  a {
+    display: inline-block;
+    font-size: 2.3rem;
+    text-decoration: none;
+    color: @black;
+    background-color: @blue;
+    padding: 0.3rem 0rem;
+    width: 20rem;
+    border-radius: @border-radius;
+    transition: background-color 0.2s;
+
+    &:hover {
+      background-color: @blue-secondary;
+    }
+  }
+}

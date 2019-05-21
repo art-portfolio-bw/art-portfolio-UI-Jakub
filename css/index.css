@@ -209,8 +209,8 @@ nav a {
 }
 .jumbo .cta {
   position: absolute;
-  left: 3.5rem;
-  bottom: 5.7rem;
+  left: 15%;
+  bottom: 10%;
 }
 .jumbo .cta p {
   font-family: "Anton";
@@ -309,4 +309,49 @@ nav a {
   text-decoration: none;
   color: black;
   margin-left: 2.5rem;
+}
+.us {
+  margin: 2rem;
+}
+.us h1 {
+  font-size: 5rem;
+  text-align: center;
+  margin-bottom: 10rem;
+}
+.us-info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.us-person {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.us-person h2 {
+  font-size: 2.8rem;
+}
+.us-person img {
+  margin: 2rem;
+  width: 30rem;
+  height: 30rem;
+  border-radius: 100%;
+  object-fit: cover;
+  border: 0.2rem solid #313237;
+}
+.us-person a {
+  display: inline-block;
+  font-size: 2.3rem;
+  text-decoration: none;
+  color: #313237;
+  background-color: #4DEDFF;
+  padding: 0.3rem 0rem;
+  width: 20rem;
+  border-radius: 0.3rem;
+  transition: background-color 0.2s;
+}
+.us-person a:hover {
+  background-color: #A3F6FF;
 }
