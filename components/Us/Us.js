@@ -95,7 +95,13 @@ const usData = [
     lastName: "Jonke",
     title: "UI Developer",
     img: "https://avatars3.githubusercontent.com/u/48270435?s=400&v=4",
-    links: [{ name: "GitHub", href: "https://github.com/Wjonke" }]
+    links: [
+      {
+        name: "LinkedIn",
+        href: "https://www.linkedin.com/in/wes-jonke-05409861/"
+      },
+      { name: "GitHub", href: "https://github.com/Wjonke" }
+    ]
   },
   {
     firstName: "Shannon",
