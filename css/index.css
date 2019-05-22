@@ -406,14 +406,17 @@ home page is marketing page
 }
 .img-cover {
   position: absolute;
-  display: none;
+  display: block;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: opacity 0.4s;
 }
 .img-cover.visible {
-  display: block;
+  opacity: 1;
 }
 .img-cover .like-button {
   position: absolute;
@@ -464,9 +467,9 @@ home page is marketing page
   margin: 2rem;
 }
 .us h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   text-align: center;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
 }
 .us-info {
   display: flex;
@@ -481,16 +484,16 @@ home page is marketing page
   margin-bottom: 2rem;
 }
 .us-person h2 {
-  font-size: 2.8rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 .us-person h3 {
-  font-size: 1.8rem;
+  font-size: 1.3rem;
 }
 .us-person img {
-  margin: 2rem;
-  width: 30rem;
-  height: 30rem;
+  margin: 2rem 2rem 2rem;
+  width: 15rem;
+  height: 15rem;
   border-radius: 100%;
   object-fit: cover;
   border: 0.2rem solid #313237;
@@ -502,7 +505,7 @@ home page is marketing page
   color: #313237;
   background-color: #4DEDFF;
   padding: 0.3rem 0rem;
-  width: 20rem;
+  width: 15rem;
   border-radius: 0.3rem;
   transition: background-color 0.2s;
   margin-bottom: 1.5rem;

@@ -78,17 +78,29 @@ const usData = [
   },
   {
     firstName: "Bhumi",
-    lastName: "Pater",
+    lastName: "Patel",
     title: "Team Leader",
     img: "https://avatars3.githubusercontent.com/u/44785921?s=400&v=4",
-    links: [{ name: "GitHub", href: "https://github.com/bhumip214" }]
+    links: [
+      {
+        name: "LinkedIn",
+        href: "https://www.linkedin.com/in/bhumi-patel-28000a184/"
+      },
+      { name: "GitHub", href: "https://github.com/bhumip214" }
+    ]
   },
   {
     firstName: "Divya",
     lastName: "Nair",
     title: "Backend Developer",
     img: "https://avatars0.githubusercontent.com/u/4283962?s=400&v=4",
-    links: [{ name: "GitHub", href: "https://github.com/dsnair" }]
+    links: [
+      {
+        name: "LinkedIn",
+        href: "www.linkedin.com/in/dsnair/"
+      },
+      { name: "GitHub", href: "https://github.com/dsnair" }
+    ]
   },
   {
     firstName: "Wes",
