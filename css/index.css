@@ -510,3 +510,8 @@ home page is marketing page
 .us-person a:hover {
   background-color: #A3F6FF;
 }
+.footer {
+  text-align: center;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
