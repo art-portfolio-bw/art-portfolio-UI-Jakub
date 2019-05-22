@@ -145,7 +145,7 @@ const topPhotoData = [
   {
     user: {
       name: "Sam Payton",
-      image: "img/placeholder1.jpg"
+      image: "img/man.jpg"
     },
     image: "img/placeholder1.jpg",
     title: "Dessert Plain",
@@ -154,7 +154,7 @@ const topPhotoData = [
   {
     user: {
       name: "Amy Thomas",
-      image: "img/placeholder1.jpg"
+      image: "img/woman1.jpg"
     },
     image: "img/placeholder2.jpg",
     title: "Ocean Hue",
@@ -163,7 +163,7 @@ const topPhotoData = [
   {
     user: {
       name: "Sophia Phung",
-      image: "img/placeholder1.jpg"
+      image: "img/woman2.jpg"
     },
     image: "img/placeholder3.jpg",
     title: "Raspberry Spring",
