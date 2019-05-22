@@ -8734,9 +8734,10 @@ a.button-cta:hover {
 .contact {
   text-align: center;
   margin: 0 auto;
-  width: 18.75rem;
-  margin-bottom: 1.25rem;
+  max-width: 18.75rem;
   margin-top: 2rem;
+  margin-bottom: 1.25rem;
+  padding: 0 1.25rem 0;
 }
 
 .contact h1 {

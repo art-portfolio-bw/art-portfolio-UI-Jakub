@@ -516,8 +516,9 @@ home page is marketing page
 .contact {
   text-align: center;
   margin: 0 auto;
-  width: 30rem;
+  max-width: 30rem;
   margin-bottom: 2rem;
+  padding: 0 2rem 0;
 }
 .contact h1 {
   font-size: 2rem;
