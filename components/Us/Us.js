@@ -61,7 +61,13 @@ const usData = [
     lastName: "Vanegas",
     title: "UX Designer",
     img: "img/about/Heymi Vanegas.jpg",
-    links: []
+    links: [
+      {
+        name: "LinkedIn",
+        href: "https://www.linkedin.com/in/heymi-vanegas-50b81b182/"
+      },
+      { name: "GitHub", href: "https://github.com/heymiday" }
+    ]
   },
   {
     firstName: "Amanda",
@@ -97,7 +103,7 @@ const usData = [
     links: [
       {
         name: "LinkedIn",
-        href: "www.linkedin.com/in/dsnair/"
+        href: "https://www.linkedin.com/in/dsnair/"
       },
       { name: "GitHub", href: "https://github.com/dsnair" }
     ]
@@ -120,7 +126,13 @@ const usData = [
     lastName: "Yoshikawa",
     title: "UI Developer",
     img: "img/about/Shannon Yoshikawa.jpg",
-    links: [{ name: "GitHub", href: "https://github.com/shannonyoshi" }]
+    links: [
+      {
+        name: "LinkedIn",
+        href: "https://www.linkedin.com/in/shannon-yoshikawa-76964b105/"
+      },
+      { name: "GitHub", href: "https://github.com/shannonyoshi" }
+    ]
   },
   {
     firstName: "Jacob",

@@ -544,6 +544,22 @@ home page is marketing page
   font-family: "Kodchasan";
   border: 0.1rem solid #313237;
   border-radius: 0.3rem;
+  margin-bottom: 1rem;
+}
+.contact a {
+  display: inline-block;
+  font-size: 2.3rem;
+  text-decoration: none;
+  color: #313237;
+  background-color: #4DEDFF;
+  padding: 0.6rem 0rem;
+  width: 100%;
+  border-radius: 0.3rem;
+  transition: background-color 0.2s;
+  margin-bottom: 1.5rem;
+}
+.contact a:hover {
+  background-color: #A3F6FF;
 }
 .footer {
   text-align: center;
