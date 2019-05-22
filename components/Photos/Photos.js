@@ -18,7 +18,7 @@ class TopPhoto {
     this.element.append(imgElement);
     imgCover.append(likeButton);
     imgCover.append(commentButton);
-    imgElement.appendChild(imgCover);
+    imgElement.append(imgCover);
     this.element.append(titleElement);
 
     imgElement.addEventListener("mouseover", () => {
