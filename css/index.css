@@ -482,6 +482,10 @@ home page is marketing page
 }
 .us-person h2 {
   font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+.us-person h3 {
+  font-size: 1.8rem;
 }
 .us-person img {
   margin: 2rem;
@@ -501,6 +505,7 @@ home page is marketing page
   width: 20rem;
   border-radius: 0.3rem;
   transition: background-color 0.2s;
+  margin-bottom: 1.5rem;
 }
 .us-person a:hover {
   background-color: #A3F6FF;
