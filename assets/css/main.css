@@ -8729,3 +8729,10 @@ a.button-cta {
 a.button-cta:hover {
   background-color: #a3f6ff;
 }
+
+/*Footer*/
+.footer {
+  text-align: center;
+  font-size: 0.9375rem;
+  margin-bottom: 1.25rem;
+}

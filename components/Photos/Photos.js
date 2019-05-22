@@ -18,7 +18,7 @@ class TopPhoto {
     this.element.append(imgElement);
     imgCover.append(likeButton);
     imgCover.append(commentButton);
-    imgElement.appendChild(imgCover);
+    imgElement.append(imgCover);
     this.element.append(titleElement);
 
     imgElement.addEventListener("mouseover", () => {
@@ -145,7 +145,7 @@ const topPhotoData = [
   {
     user: {
       name: "Sam Payton",
-      image: "img/placeholder1.jpg"
+      image: "img/man.jpg"
     },
     image: "img/placeholder1.jpg",
     title: "Dessert Plain",
@@ -154,7 +154,7 @@ const topPhotoData = [
   {
     user: {
       name: "Amy Thomas",
-      image: "img/placeholder1.jpg"
+      image: "img/woman1.jpg"
     },
     image: "img/placeholder2.jpg",
     title: "Ocean Hue",
@@ -163,7 +163,7 @@ const topPhotoData = [
   {
     user: {
       name: "Sophia Phung",
-      image: "img/placeholder1.jpg"
+      image: "img/woman2.jpg"
     },
     image: "img/placeholder3.jpg",
     title: "Raspberry Spring",
@@ -171,6 +171,8 @@ const topPhotoData = [
   }
 ];
 
-topPhotoData.forEach(data =>
-  document.querySelector(".top-photographs").append(new TopPhoto(data).element)
+const photos = topPhotoData.map(data =>
+  document.querySelector(".top-photographs").appendChild(new TopPhoto(data).element)
 );
+
+console.log(photos);
