@@ -8775,7 +8775,7 @@ a.button-cta:hover {
   font-size: 1.4375rem;
   text-decoration: none;
   color: #313237;
-  background-color: #4DEDFF;
+  background-color: #4dedff;
   padding: 0rem 0rem;
   width: 100%;
   border-radius: 0.1875rem;
@@ -8783,7 +8783,7 @@ a.button-cta:hover {
   margin-bottom: 0.9375rem;
 }
 .contact a:hover {
-  background-color: #A3F6FF;
+  background-color: #a3f6ff;
 }
 
 .footer {
@@ -8807,4 +8807,8 @@ a.button-cta:hover {
 .html5up-footer {
   margin-top: -70px;
   font-size: 10px;
+}
+
+* {
+  box-shadow: none !important;
 }
