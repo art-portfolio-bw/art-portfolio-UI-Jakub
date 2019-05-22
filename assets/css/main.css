@@ -8778,9 +8778,16 @@ a.button-cta:hover {
 .socials {
   margin-bottom: 2rem;
 }
+
 .socials a {
   color: #313237;
 }
+
 .socials a:hover {
   color: rgb(86, 153, 160);
+}
+
+.html5up-footer {
+	margin-top: -70px;
+	font-size: 10px;
 }
