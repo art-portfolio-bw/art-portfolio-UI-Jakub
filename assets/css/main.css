@@ -8735,7 +8735,8 @@ a.button-cta:hover {
   text-align: center;
   margin: 0 auto;
   width: 18.75rem;
-  margin-bottom: 1.25rem;
+	margin-bottom: 1.25rem;
+	margin-top: 2rem;
 }
 
 .contact h1 {
