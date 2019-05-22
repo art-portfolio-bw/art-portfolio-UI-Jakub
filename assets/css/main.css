@@ -8594,8 +8594,8 @@ body.is-preload .items.onload-fade-in > * > .inner {
   background-color: rgba(255, 255, 255, 0.9);
   width: 100%;
   align-items: center;
-	height: 3.75rem;
-	z-index: 1;
+  height: 3.75rem;
+  z-index: 1;
 }
 
 .main-nav a {
@@ -8660,17 +8660,17 @@ body.is-preload .items.onload-fade-in > * > .inner {
 }
 
 .hamburger .hamburger-btn {
-	background-color: transparent;
-	box-shadow: none;
+  background-color: transparent;
+  box-shadow: none;
   border: none;
-	cursor: pointer;
-	color: #313237;
-	padding: 0;
-	border-radius: 0;
+  cursor: pointer;
+  color: #313237;
+  padding: 0;
+  border-radius: 0;
 }
 
 .hamburger .hamburger-btn:hover {
-	color: #313237 !important;
+  color: #313237 !important;
 }
 
 /*Mobile nav*/
@@ -8731,8 +8731,55 @@ a.button-cta:hover {
 }
 
 /*Footer*/
+.contact {
+  text-align: center;
+  margin: 0 auto;
+  width: 18.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.contact h1 {
+  font-size: 1.25rem;
+  margin-bottom: 1.25rem;
+}
+
+.contact .contact-input-container {
+	display: flex;
+	margin-bottom: -14px;
+}
+
+.contact .contact-input-container input {
+  width: 100%;
+  font-size: 0.9375rem;
+  font-family: "Kodchasan";
+  border: 0.0625rem solid #313237;
+  border-radius: 0.1875rem;
+}
+
+.contact .contact-input-container input:first-of-type {
+  margin-right: 0.625rem;
+}
+
+.contact textarea {
+  width: 100%;
+  font-size: 0.9375rem;
+  font-family: "Kodchasan";
+  border: 0.0625rem solid #313237;
+  border-radius: 0.1875rem;
+}
+
 .footer {
   text-align: center;
   font-size: 0.9375rem;
   margin-bottom: 1.25rem;
+}
+
+.socials {
+  margin-bottom: 2rem;
+}
+.socials a {
+  color: #313237;
+}
+.socials a:hover {
+  color: rgb(86, 153, 160);
 }

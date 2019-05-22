@@ -127,7 +127,13 @@ const usData = [
     lastName: "Tonna",
     title: "Front End Developer",
     img: "https://avatars1.githubusercontent.com/u/34466548?s=400&v=4",
-    links: [{ name: "GitHub", href: "https://github.com/Jtonna" }]
+    links: [
+      {
+        name: "LinkedIn",
+        href: "https://www.linkedin.com/in/jtonna/"
+      },
+      { name: "GitHub", href: "https://github.com/Jtonna" }
+    ]
   }
 ].sort((a, b) => (a.lastName < b.lastName ? -1 : 1));
 
