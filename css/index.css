@@ -157,6 +157,7 @@ html {
   font-size: 62.5%;
   font-family: "Kodchasan";
   color: #313237;
+  overflow-x: hidden;
 }
 .content {
   margin: 0 auto;
@@ -272,41 +273,48 @@ home page is marketing page
 }
 .jumbo img {
   width: 100%;
-  max-height: 59rem;
+  height: 94vh;
   object-fit: cover;
 }
 .jumbo .cta {
   position: absolute;
   left: 15%;
-  bottom: 10%;
+  top: 30%;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 720px) {
   .jumbo .cta {
     display: flex;
     flex-direction: column;
     text-align: center;
     left: 3rem;
     right: 3rem;
+    bottom: 10%;
+    top: auto;
   }
 }
 .jumbo .cta .cta-line {
   display: flex;
   overflow: hidden;
+  color: white;
+  font-weight: bold;
+}
+.jumbo .cta .cta-line:last-of-type {
+  margin-bottom: 3rem;
 }
 .jumbo .cta .cta-line div {
-  font-family: "Anton";
-  text-shadow: 0px 0px 8px #ffffff;
-  font-size: 3rem;
-  margin-bottom: 4rem;
+  font-size: 4rem;
+  padding-bottom: 1rem;
+  margin-bottom: 2rem;
   opacity: 0;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 720px) {
   .jumbo .cta .cta-line div {
-    font-size: 2.5rem;
+    text-shadow: 0px 0px 5px #000000, 0px 0px 5px #000000, 0px 0px 5px #000000;
+    font-size: 2rem;
     margin-bottom: 2rem;
   }
 }
-@media screen and (max-width: 352px) {
+@media screen and (max-width: 720px) {
   .jumbo .cta .cta-line div {
     font-size: 2rem;
   }
@@ -314,10 +322,11 @@ home page is marketing page
 .jumbo .cta .cta-line div.showcase2,
 .jumbo .cta .cta-line div.design2 {
   text-align: left;
-  min-width: 20rem;
+  min-width: 200rem;
   overflow: hidden;
 }
 .jumbo .cta a {
+  position: relative;
   font-size: 2.3rem;
   text-decoration: none;
   color: #313237;
@@ -325,10 +334,12 @@ home page is marketing page
   padding: 0.3rem 7.5rem;
   border-radius: 0.3rem;
   transition: background-color 0.2s;
+  opacity: 0;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 720px) {
   .jumbo .cta a {
-    padding: 0.3rem 4rem;
+    width: 25rem;
+    padding: 0.3rem 0;
   }
 }
 .jumbo .cta a:hover {
@@ -389,7 +400,7 @@ home page is marketing page
   top: 0;
   z-index: -1;
   opacity: 0;
-  transition: opacity 0.4s;
+  transition: opacity 1s;
   height: 50rem;
 }
 .carousel .carousel-element.visible {
@@ -404,7 +415,7 @@ home page is marketing page
   position: absolute;
   top: 0;
   left: 20%;
-  right: 20%;
+  right: 40%;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -413,13 +424,24 @@ home page is marketing page
 .carousel .carousel-element .carousel-text h2 {
   font-size: 5rem;
   color: white;
-  text-shadow: 0px 0px 8px #000000, 0px 0px 8px #000000, 0px 0px 8px #000000;
+  text-shadow: 0px 0px 20px #000000, 0px 0px 20px #000000, 0px 0px 20px #000000;
   margin-bottom: 2rem;
 }
 .carousel .carousel-element .carousel-text p {
-  font-size: 2rem;
+  font-size: 2.5rem;
   color: white;
-  text-shadow: 0px 0px 8px #000000, 0px 0px 8px #000000, 0px 0px 8px #000000, 0px 0px 8px #000000, 0px 0px 8px #000000, 0px 0px 8px #000000;
+  text-shadow: 0px 0px 20px #000000, 0px 0px 20px #000000, 0px 0px 20px #000000;
+}
+@media screen and (max-width: 800px) {
+  .carousel .carousel-element .carousel-text p {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .carousel .carousel-element .carousel-text {
+    font-size: 2rem;
+    right: 20%;
+  }
 }
 .photographers-of-the-week h2 {
   font-size: 2.7rem;

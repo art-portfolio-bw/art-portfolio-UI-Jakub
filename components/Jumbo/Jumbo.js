@@ -14,5 +14,10 @@ window.addEventListener("load", () => {
       1,
       { marginLeft: 200, opacity: 0 },
       { marginLeft: 0, opacity: 1 }
+    ).fromTo(
+      ".cta a",
+      1,
+      { top: -15 ,opacity: 0 },
+      { top: 0, opacity: 1 }
     );
 });

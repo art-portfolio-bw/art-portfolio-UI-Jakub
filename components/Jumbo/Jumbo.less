@@ -4,53 +4,65 @@
 
   img {
     width: 100%;
-    max-height: 59rem;
+    height: 100vh - @nav-height;
     object-fit: cover;
   }
 
   .cta {
     position: absolute;
     left: 15%;
-    bottom: 10%;
+    top: 30%;
 
-    @media @mobile-view {
+    @media screen and (max-width: 720px) {
       display: flex;
       flex-direction: column;
       text-align: center;
       left: 3rem;
       right: 3rem;
+      bottom: 10%;
+      top: auto;
     }
 
     .cta-line {
       display: flex;
       overflow: hidden;
+      color: white;
+      font-weight: bold;
+
+      &:last-of-type {
+        margin-bottom: 3rem;
+      }
 
       div {
-        font-family: "Anton";
-        text-shadow: 0px 0px 8px rgba(255, 255, 255, 1);
-        font-size: 3rem;
-        margin-bottom: 4rem;
+        // text-shadow: 0px 0px 6px rgba(255, 255, 255, 1),
+        //   0px 0px 6px rgba(255, 255, 255, 1);
+        font-size: 4rem;
+        padding-bottom: 1rem;
+        margin-bottom: 2rem;
         opacity: 0;
 
-        @media @mobile-view {
-          font-size: 2.5rem;
+        @media screen and (max-width: 720px) {
+          text-shadow: 0px 0px 5px rgba(0, 0, 0, 1),
+            0px 0px 5px rgba(0, 0, 0, 1), 0px 0px 5px rgba(0, 0, 0, 1);
+          font-size: 2rem;
           margin-bottom: 2rem;
         }
 
-        @media screen and (max-width: 352px) {
+        @media screen and (max-width: 720px) {
           font-size: 2rem;
         }
 
         &.showcase2,
         &.design2 {
           text-align: left;
-          min-width: 20rem;
+          min-width: 200rem;
           overflow: hidden;
         }
       }
     }
 
     a {
+      position: relative;
       font-size: 2.3rem;
       text-decoration: none;
       color: @black;
@@ -58,9 +70,11 @@
       padding: 0.3rem 7.5rem;
       border-radius: @border-radius;
       transition: background-color 0.2s;
+      opacity: 0;
 
-      @media @mobile-view {
-        padding: 0.3rem 4rem;
+      @media screen and (max-width: 720px) {
+        width: 25rem;
+        padding: 0.3rem 0;
       }
 
       &:hover {
