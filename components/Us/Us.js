@@ -149,6 +149,31 @@ const usData = [
   }
 ].sort((a, b) => (a.lastName < b.lastName ? -1 : 1));
 
-for (const data of usData) {
-  document.querySelector(".us-info").append(new AboutPerson(data).element);
-}
+const us = usData.map(data =>
+  document
+    .querySelector(".us-info")
+    .appendChild(new AboutPerson(data).element)
+);
+
+(() => {
+  let showed = false;
+  
+  window.addEventListener("load", () => {
+    console.log(us);
+    if (!showed) {
+      showed = true;
+      let tl = new TimelineMax();
+  
+      tl = tl.to(us[0], 0.4, {});
+  
+      for (const person of us) {
+        tl = tl.fromTo(
+          person,
+          0.4,
+          { top: -20, opacity: 0 },
+          { top: 0, opacity: 1 }
+        );
+      }
+    }
+  });
+  })();
