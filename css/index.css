@@ -270,6 +270,11 @@ body {
   height: 94vh;
   object-fit: cover;
 }
+@media screen and (max-width: 600px) {
+  .jumbo img {
+    object-position: 75% 50%;
+  }
+}
 .jumbo .cta {
   position: absolute;
   max-width: 100%;
