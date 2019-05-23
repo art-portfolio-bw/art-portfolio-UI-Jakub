@@ -153,20 +153,18 @@ const us = usData.map(data =>
   document.querySelector(".us-info").appendChild(new AboutPerson(data).element)
 );
 
-(() => {
-  window.addEventListener("load", () => {
-    console.log(us);
-    let tl = new TimelineMax();
+window.addEventListener("load", () => {
+  console.log(us);
+  let tl = new TimelineMax();
 
-    tl = tl.to(us[0], 0.4, {});
+  tl = tl.to(us[0], 0.4, {});
 
-    for (const person of us) {
-      tl = tl.fromTo(
-        person,
-        0.4,
-        { top: -20, opacity: 0 },
-        { top: 0, opacity: 1 }
-      );
-    }
-  });
-})();
+  for (const person of us) {
+    tl = tl.fromTo(
+      person,
+      0.4,
+      { top: -20, opacity: 0 },
+      { top: 0, opacity: 1 }
+    );
+  }
+});
