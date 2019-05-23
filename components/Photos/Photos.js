@@ -172,7 +172,49 @@ const topPhotoData = [
 ];
 
 const photos = topPhotoData.map(data =>
-  document.querySelector(".top-photographs").appendChild(new TopPhoto(data).element)
+  document
+    .querySelector(".top-photographs")
+    .appendChild(new TopPhoto(data).element)
 );
 
-console.log(photos);
+function getPosition(el) {
+  let xPos = 0;
+  let yPos = 0;
+
+  while (el) {
+    xPos += el.offsetLeft - el.scrollLeft + el.clientLeft;
+    yPos += el.offsetTop - el.scrollTop + el.clientTop;
+
+    el = el.offsetParent;
+  }
+  return {
+    x: xPos,
+    y: yPos
+  };
+}
+
+(() => {
+let scrolled = false;
+
+window.addEventListener("scroll", () => {
+  const position = document.documentElement.clientHeight + window.scrollY;
+  const elementPosition = getPosition(
+    document.querySelector(".top-photographs")
+  );
+  if (position > elementPosition.y && !scrolled) {
+    scrolled = true;
+    let tl = new TimelineMax();
+
+    tl = tl.to(photos[0], 0.4, {});
+
+    for (const photo of photos) {
+      tl = tl.fromTo(
+        photo,
+        0.4,
+        { top: -20, opacity: 0 },
+        { top: 0, opacity: 1 }
+      );
+    }
+  }
+});
+})();
