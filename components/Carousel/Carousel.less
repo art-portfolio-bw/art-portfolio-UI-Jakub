@@ -3,7 +3,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  height: 500px;
+  height: 50rem;
   position: relative;
   overflow: hidden;
   margin-bottom: 5.8rem;
@@ -14,28 +14,40 @@
     justify-content: center;
     color: @black;
     background-color: white;
-    font-size: 40px;
+    font-size: 4rem;
     border-radius: 50%;
     position: absolute;
-    width: 50px;
-    height: 50px;
+    width: 5rem;
+    height: 5rem;
     cursor: pointer;
     user-select: none;
+
     &:hover {
       color: white;
       background-color: @black;
     }
   }
+
   .left-button {
     top: 50%;
-    left: 25px;
+    left: 2.5rem;
     transform: translate(0, -50%);
+
+    @media @mobile-view {
+      left: 0.5rem;
+    }
   }
+
   .right-button {
     top: 50%;
-    right: 25px;
+    right: 2.5rem;
     transform: translate(0, -50%);
+
+    @media @mobile-view {
+      right: 0.5rem;
+    }
   }
+
   .carousel-element {
     width: 100%;
     position: absolute;
@@ -43,7 +55,7 @@
     z-index: -1;
     opacity: 0;
     transition: opacity 0.4s;
-    height: 500px;
+    height: 50rem;
 
     &.visible {
       opacity: 1;
