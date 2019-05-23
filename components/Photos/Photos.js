@@ -130,17 +130,6 @@ class CommentButton {
   }
 }
 
-class RecentPopularPhoto {
-  constructor(props) {
-    this.element = document.createElement("div");
-    this.element.classList.add("collection");
-    this.user = props.user;
-    this.image = props.image;
-    this.title = props.title;
-    this.likes = props.likes;
-  }
-}
-
 const topPhotoData = [
   {
     user: {

@@ -164,10 +164,6 @@ body {
 .content {
   margin: 0 auto;
 }
-/*
-delete bottom navbar and search bar, home page instead of photo collections,
-home page is marketing page
-*/
 .main-nav {
   position: fixed;
   display: flex;
