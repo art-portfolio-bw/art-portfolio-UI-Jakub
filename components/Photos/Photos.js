@@ -136,7 +136,7 @@ const topPhotoData = [
       name: "Sam Payton",
       image: "img/man.jpg"
     },
-    image: "img/placeholder1.jpg",
+    image: "img/brushes.jpg",
     title: "Dessert Plain",
     likes: 100
   },
@@ -145,7 +145,7 @@ const topPhotoData = [
       name: "Amy Thomas",
       image: "img/woman1.jpg"
     },
-    image: "img/placeholder2.jpg",
+    image: "img/city.jpg",
     title: "Ocean Hue",
     likes: 85
   },
@@ -154,7 +154,7 @@ const topPhotoData = [
       name: "Sophia Phung",
       image: "img/woman2.jpg"
     },
-    image: "img/placeholder3.jpg",
+    image: "img/sunflower.jpg",
     title: "Raspberry Spring",
     likes: 73
   }
