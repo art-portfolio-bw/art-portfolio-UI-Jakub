@@ -136,12 +136,6 @@ html {
   box-sizing: inherit;
 }
 @font-face {
-  font-family: 'Anton';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Anton Regular'), local('Anton-Regular'), url(https://fonts.gstatic.com/s/anton/v10/1Ptgg87LROyAm3Kz-Co.ttf) format('truetype');
-}
-@font-face {
   font-family: 'Kodchasan';
   font-style: normal;
   font-weight: 400;
