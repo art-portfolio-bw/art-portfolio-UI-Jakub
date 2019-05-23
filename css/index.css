@@ -321,6 +321,93 @@ home page is marketing page
 .jumbo .cta a:hover {
   background-color: #A3F6FF;
 }
+.carousel {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50rem;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 5.8rem;
+}
+.carousel .left-button,
+.carousel .right-button {
+  display: flex;
+  justify-content: center;
+  color: #313237;
+  background-color: white;
+  font-size: 4rem;
+  border-radius: 50%;
+  position: absolute;
+  width: 5rem;
+  height: 5rem;
+  cursor: pointer;
+  user-select: none;
+}
+.carousel .left-button:hover,
+.carousel .right-button:hover {
+  color: white;
+  background-color: #313237;
+}
+.carousel .left-button {
+  top: 50%;
+  left: 2.5rem;
+  transform: translate(0, -50%);
+}
+@media screen and (max-width: 600px) {
+  .carousel .left-button {
+    left: 0.5rem;
+  }
+}
+.carousel .right-button {
+  top: 50%;
+  right: 2.5rem;
+  transform: translate(0, -50%);
+}
+@media screen and (max-width: 600px) {
+  .carousel .right-button {
+    right: 0.5rem;
+  }
+}
+.carousel .carousel-element {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.4s;
+  height: 50rem;
+}
+.carousel .carousel-element.visible {
+  opacity: 1;
+}
+.carousel .carousel-element img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.carousel .carousel-element .carousel-text {
+  position: absolute;
+  top: 0;
+  left: 20%;
+  right: 20%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.carousel .carousel-element .carousel-text h2 {
+  font-size: 5rem;
+  color: white;
+  text-shadow: 0px 0px 8px #000000, 0px 0px 8px #000000, 0px 0px 8px #000000;
+  margin-bottom: 2rem;
+}
+.carousel .carousel-element .carousel-text p {
+  font-size: 2rem;
+  color: white;
+  text-shadow: 0px 0px 8px #000000, 0px 0px 8px #000000, 0px 0px 8px #000000, 0px 0px 8px #000000, 0px 0px 8px #000000, 0px 0px 8px #000000;
+}
 .photographers-of-the-week h2 {
   font-size: 2.7rem;
   font-weight: bold;
@@ -406,14 +493,17 @@ home page is marketing page
 }
 .img-cover {
   position: absolute;
-  display: none;
+  display: block;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
+  background-color: rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: opacity 0.4s;
 }
 .img-cover.visible {
-  display: block;
+  opacity: 1;
 }
 .img-cover .like-button {
   position: absolute;
@@ -464,9 +554,9 @@ home page is marketing page
   margin: 2rem;
 }
 .us h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   text-align: center;
-  margin-bottom: 10rem;
+  margin-bottom: 5rem;
 }
 .us-info {
   display: flex;
@@ -478,19 +568,19 @@ home page is marketing page
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-bottom: 2rem;
+  margin: 0 2rem 2rem;
 }
 .us-person h2 {
-  font-size: 2.8rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 .us-person h3 {
-  font-size: 1.8rem;
+  font-size: 1.3rem;
 }
 .us-person img {
-  margin: 2rem;
-  width: 30rem;
-  height: 30rem;
+  margin: 2rem 0 2rem;
+  width: 15rem;
+  height: 15rem;
   border-radius: 100%;
   object-fit: cover;
   border: 0.2rem solid #313237;
@@ -502,7 +592,7 @@ home page is marketing page
   color: #313237;
   background-color: #4DEDFF;
   padding: 0.3rem 0rem;
-  width: 20rem;
+  width: 15rem;
   border-radius: 0.3rem;
   transition: background-color 0.2s;
   margin-bottom: 1.5rem;
@@ -510,8 +600,67 @@ home page is marketing page
 .us-person a:hover {
   background-color: #A3F6FF;
 }
+.contact {
+  text-align: center;
+  margin: 0 auto;
+  max-width: 45rem;
+  margin-bottom: 2rem;
+  padding: 0 2rem 0;
+}
+.contact h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.contact .contact-input-container {
+  display: flex;
+}
+.contact .contact-input-container input {
+  width: 100%;
+  padding: 12px 13.2px;
+  font-size: 1.5rem;
+  font-family: "Kodchasan";
+  border: 0.1rem solid #313237;
+  border-radius: 0.3rem;
+}
+.contact .contact-input-container input:first-of-type {
+  margin-right: 1rem;
+}
+.contact textarea {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 1.5rem;
+  font-family: "Kodchasan";
+  border: 0.1rem solid #313237;
+  border-radius: 0.3rem;
+  margin-bottom: 1rem;
+}
+.contact a {
+  display: inline-block;
+  font-size: 2.3rem;
+  text-decoration: none;
+  color: #313237;
+  background-color: #4DEDFF;
+  padding: 0.6rem 0rem;
+  width: 100%;
+  border-radius: 0.3rem;
+  transition: background-color 0.2s;
+  margin-bottom: 1.5rem;
+}
+.contact a:hover {
+  background-color: #A3F6FF;
+}
 .footer {
   text-align: center;
   font-size: 1.5rem;
   margin-bottom: 2rem;
+}
+.socials {
+  margin-bottom: 2rem;
+}
+.socials a {
+  color: #313237;
+  transition: color 0.2s;
+}
+.socials a:hover {
+  color: #5699a0;
 }

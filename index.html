@@ -1,124 +1,127 @@
-<!DOCTYPE HTML>
-<!--
-	Story by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-	<title>Fotograph</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-	integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/index.css">
-	<link rel="stylesheet" href="assets/css/main.css" />
-	<noscript>
-		<link rel="stylesheet" href="assets/css/noscript.css" />
-	</noscript>
-	<script defer src="components/Nav/Nav.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fotograph</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/index.css">
+  <script defer src="components/Nav/Nav.js"></script>
+  <script defer src="components/Carousel/Carousel.js"></script>
+  <script defer src="components/Photos/Photos.js"></script>
 </head>
 
-<body class="is-preload">
+<!-- 
+Add more images, 
+add zoom in animations to images,
+add mask animation to mobile menu,
+add carousel,
+add animation to jumbo text -->
 
-	<!-- Wrapper -->
-	<div id="wrapper" class="divided content">
-			<nav class="main-nav">
-					<div class="left-nav">
-						<a href="index.html"><img src="img/LOGO.png" class="logo" alt="logo"></img></a>
-						<div class="left-links">
-							<a href="index.html">Home</a>
-							<a href="artists.html">Artists</a>
-							<a href="about.html">About</a>
-						</div>
-					</div>
-					<div class="right-nav">
-						<a href="https://fotograph-app.netlify.com/login">Login</a>
-						<a href="https://fotograph-app.netlify.com/sign-up">Sign Up</a>
-					</div>
-					<div class="hamburger">
-						<button class="hamburger-btn">
-							<i class="fas fa-bars fa-3x"></i>
-						</button>
-					</div>
-				</nav>
-				<nav class="mobile-nav">
-					<a href="index.html">Home</a>
-					<a href="artists.html">Artists</a>
-					<a href="about.html">About</a>
-					<div class="mobile-nav-login-signup">
-						<a href="https://fotograph-app.netlify.com/login">Login</a>
-						<a href="https://fotograph-app.netlify.com/sign-up">Sign Up</a>
-					</div>
-				</nav>
-				<div class="nav-separation"></div>
+<body>
+  <div class="content">
+    <nav class="main-nav">
+      <div class="left-nav">
+        <a href="index.html"><img src="img/LOGO.png" class="logo" alt="logo"></img></a>
+        <div class="left-links">
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+        </div>
+      </div>
+      <div class="right-nav">
+        <a href="https://fotograph-app.netlify.com/login">Login</a>
+        <a href="#">Sign Up</a>
+      </div>
+      <div class="hamburger">
+        <button class="hamburger-btn">
+          <i class="fas fa-bars fa-3x"></i>
+        </button>
+      </div>
+    </nav>
+    <nav class="mobile-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <div class="mobile-nav-login-signup">
+        <a href="https://fotograph-app.netlify.com/login">Login</a>
+        <a href="https://fotograph-app.netlify.com/sign-up">Sign Up</a>
+      </div>
+    </nav>
+    <div class="nav-separation"></div>
+    <section class="jumbo">
+      <img src="img/placeholder4.jpg" alt="Art">
+      <div class="cta">
+        <p>Showcase your photography. <br>
+          Design a great profile.</p>
+        <a href="https://fotograph-app.netlify.com/sign-up">Get Started</a>
+      </div>
+    </section>
 
-		<!-- One -->
-		<section
-			class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
-			<div class="content">
-				<h1>Fotograph</h1>
-				<p class="major">Build a beautiful portfolio and easly interact with your followers.</p>
-				<a href="https://fotograph-app.netlify.com/sign-up" class="button-cta">Get Started</a>
-			</div>
-			<div class="image">
-				<img src="img/placeholder4.jpg" alt="" />
-			</div>
-		</section>
+    <div class="carousel">
+      <div class="left-button">
+        <</div> <div class="carousel-element">
+          <img src="img/post.jpg">
+          <div class="carousel-text">
+            <h2>Post</h2>
+            <p>Add a new picture with a title and description for your followers to see and love. Post as many pictures
+              as
+              you like for FREE! Infinite pictures!</p>
+          </div>
+      </div>
+      <div class="carousel-element">
+        <img src="img/note.jpg">
+        <div class="carousel-text">
+          <h2>Edit</h2>
+          <p>Changed your mind? Easly edit your posts. With just one click you can edit your posts as many times as you
+            like. We understand artists can be indecisive!</p>
+        </div>
+      </div>
+      <div class="carousel-element">
+        <img src="img/like.jpg">
+        <div class="carousel-text">
+          <h2>Like</h2>
+          <p>Your fans want to show their love and now they can thanks to our innovative "like" feature. Don't want to
+            post any pictures? Just came here to look at some sweet pics? Like as many posts as you want and show your
+            love for your favorite artists! Show them that you care!</p>
+        </div>
+      </div>
+      <div class="right-button">></div>
+    </div>
 
-		<!-- Two -->
-		<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in"
-			id="first">
-			<div class="content">
-				<h2>Post</h2>
-				<p>Add a new picture with a title and description for your followers to see and love. Post as many pictures as you like for FREE! Infinite pictures!</p>
-			</div>
-			<div class="image">
-				<img src="img/post.jpg" alt="" />
-			</div>
-		</section>
-
-		<!-- Three -->
-		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
-			<div class="content">
-				<h2>Edit</h2>
-				<p>Changed your mind? Easly edit your posts. With just one click you can edit your posts as many times as you like. We understand artists can be indecisive!</p>
-			</div>
-			<div class="image">
-				<img src="img/placeholder2.jpg" alt="" />
-			</div>
-		</section>
-
-		<!-- Four -->
-		<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
-			<div class="content">
-				<h2>Like</h2>
-				<p>Your fans want to show their love and now they can thanks to our innovative "like" feature. Don't want to post any pictures? Just came here to look at some sweet pics? Like as many posts as you want and show your love for your favorite artists! Show them that you care!</p>
-			</div>
-			<div class="image">
-				<img src="img/like.jpg" alt="" />
-			</div>
-		</section>
-
-		<!-- Footer -->
-		<footer class="wrapper style1 align-center">
-			<div class="inner">
-				<p>&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
-			</div>
-		</footer>
-		<footer class="footer">©2019 Copyright Fotograph</footer>
-	</div>
-
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/jquery.scrollex.min.js"></script>
-	<script src="assets/js/jquery.scrolly.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
-
+    <section class="photographers-of-the-week">
+      <h2>Photographers of the Week</h2>
+      <h3>Top Collection</h3>
+      <div class="top-photographs"></div>
+    </section>
+    <!-- <section class="recent-and-popular">
+        <div class="recent-popular-buttons">
+          <a href="#">Recent</a>
+          <a href="#">Popular</a>
+        </div>
+        <div class="recent-popular-photographs"></div>
+      </section> -->
+    <section class="contact">
+      <h1>Contact Us</h1>
+      <div class="contact-input-container">
+        <input type="text" placeholder="Name">
+        <input type="text" placeholder="Email">
+      </div>
+      <br>
+      <textarea placeholder="Message"></textarea>
+      <a href="#">Send</a>
+    </section>
+    <footer class="footer">
+      <div class="socials">
+        <a href="#"><i class="fab fa-twitter-square fa-3x"></i></a>
+        <a href="#"><i class="fab fa-facebook-square fa-3x"></i></a>
+        <a href="#"><i class="fab fa-instagram fa-3x"></i></a>
+      </div>
+      <div>
+        ©2019 Copyright Fotograph
+      </div>
+    </footer>
+  </div>
 </body>
 
 </html>

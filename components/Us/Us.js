@@ -61,7 +61,13 @@ const usData = [
     lastName: "Vanegas",
     title: "UX Designer",
     img: "img/about/Heymi Vanegas.jpg",
-    links: []
+    links: [
+      {
+        name: "LinkedIn",
+        href: "https://www.linkedin.com/in/heymi-vanegas-50b81b182/"
+      },
+      { name: "GitHub", href: "https://github.com/heymiday" }
+    ]
   },
   {
     firstName: "Amanda",
@@ -78,17 +84,29 @@ const usData = [
   },
   {
     firstName: "Bhumi",
-    lastName: "Pater",
+    lastName: "Patel",
     title: "Team Leader",
     img: "https://avatars3.githubusercontent.com/u/44785921?s=400&v=4",
-    links: [{ name: "GitHub", href: "https://github.com/bhumip214" }]
+    links: [
+      {
+        name: "LinkedIn",
+        href: "https://www.linkedin.com/in/bhumi-patel-28000a184/"
+      },
+      { name: "GitHub", href: "https://github.com/bhumip214" }
+    ]
   },
   {
     firstName: "Divya",
     lastName: "Nair",
     title: "Backend Developer",
     img: "https://avatars0.githubusercontent.com/u/4283962?s=400&v=4",
-    links: [{ name: "GitHub", href: "https://github.com/dsnair" }]
+    links: [
+      {
+        name: "LinkedIn",
+        href: "https://www.linkedin.com/in/dsnair/"
+      },
+      { name: "GitHub", href: "https://github.com/dsnair" }
+    ]
   },
   {
     firstName: "Wes",
@@ -108,14 +126,26 @@ const usData = [
     lastName: "Yoshikawa",
     title: "UI Developer",
     img: "img/about/Shannon Yoshikawa.jpg",
-    links: [{ name: "GitHub", href: "https://github.com/shannonyoshi" }]
+    links: [
+      {
+        name: "LinkedIn",
+        href: "https://www.linkedin.com/in/shannon-yoshikawa-76964b105/"
+      },
+      { name: "GitHub", href: "https://github.com/shannonyoshi" }
+    ]
   },
   {
     firstName: "Jacob",
     lastName: "Tonna",
     title: "Front End Developer",
     img: "https://avatars1.githubusercontent.com/u/34466548?s=400&v=4",
-    links: [{ name: "GitHub", href: "https://github.com/Jtonna" }]
+    links: [
+      {
+        name: "LinkedIn",
+        href: "https://www.linkedin.com/in/jtonna/"
+      },
+      { name: "GitHub", href: "https://github.com/Jtonna" }
+    ]
   }
 ].sort((a, b) => (a.lastName < b.lastName ? -1 : 1));
 
