@@ -288,9 +288,6 @@ body {
     flex-direction: column;
     text-align: center;
     left: 3rem;
-    right: auto;
-    bottom: 20%;
-    top: auto;
   }
 }
 .jumbo .cta .cta-line {
