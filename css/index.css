@@ -221,6 +221,7 @@ body {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
 }
 .hamburger .hamburger-btn:focus {
   outline: 0;
@@ -368,6 +369,7 @@ body {
   height: 5rem;
   cursor: pointer;
   user-select: none;
+  -webkit-tap-highlight-color: transparent;
 }
 .carousel .left-button:hover,
 .carousel .right-button:hover {
