@@ -480,6 +480,7 @@ body {
 .collection {
   width: 100%;
   position: relative;
+  opacity: 0;
 }
 .collection:last-of-type {
   margin-right: 0;
